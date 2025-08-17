@@ -11,7 +11,7 @@ public class Product {
     public Product(String url, String imageUrl, String price, String name, String description) {
         this.url = url;
         this.imageUrl = imageUrl;
-        this.price = price;
+        this.price = price.split(" ")[0];
         this.name = name;
         this.description = description;
     }
